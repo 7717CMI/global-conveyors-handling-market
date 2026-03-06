@@ -18,7 +18,7 @@ export const CHART_GROUPS: ChartGroup[] = [
     id: 'market-analysis',
     label: 'Market Analysis',
     description: 'Core market metrics and trends',
-    charts: ['grouped-bar', 'multi-line', 'heatmap', 'comparison-table', 'waterfall'],
+    charts: ['grouped-bar', 'multi-line', 'heatmap', 'comparison-table', 'waterfall', 'competitive-intelligence'],
     icon: '📊'
   },
   {

@@ -6,7 +6,7 @@ interface OEMData {
   // OEM Information
   oemManufacturerName: string
   hqCountry: string
-  primaryDoorTypeFocus: string
+  primaryDoorTypeFocus: string // reused as primaryProductFocus
   automationFocus: string
   materialFocus: string
   keyEndUseFocus: string
@@ -45,228 +45,130 @@ interface DistributorData {
 // Sample data for Industrial Door OEMs
 const oemData: OEMData[] = [
   {
-    oemManufacturerName: 'Hörmann',
+    oemManufacturerName: 'Daifuku Co., Ltd.',
+    hqCountry: 'Japan',
+    primaryDoorTypeFocus: 'Belt Conveyors, Overhead Conveyors, AGVs',
+    automationFocus: 'Full Automation, AI-driven Sorting',
+    materialFocus: 'Steel, Aluminum, Modular Plastics',
+    keyEndUseFocus: 'E-commerce, Automotive, Airports',
+    goToMarketChannels: 'Direct Sales, System Integrators',
+    serviceAftermarketStrength: 'Strong - Global Service Network',
+    typicalPositioning: 'Premium',
+    keyDistributorIntegratorApproach: 'Strategic SI Partners, Direct Key Accounts',
+    keyInsights: 'Global market leader (14% share), dominant in airport baggage & automotive paint lines'
+  },
+  {
+    oemManufacturerName: 'BEUMER Group',
     hqCountry: 'Germany',
-    primaryDoorTypeFocus: 'Industrial Sectional, High-Speed, Loading Bay',
-    automationFocus: 'Full Automation, Smart Controls',
-    materialFocus: 'Steel, Aluminum, Insulated Panels',
-    keyEndUseFocus: 'Manufacturing, Logistics, Automotive',
-    goToMarketChannels: 'Direct Sales, Authorized Dealers',
-    serviceAftermarketStrength: 'Strong - Pan-India Service Network',
+    primaryDoorTypeFocus: 'Belt Conveyors, Bucket Elevators, Overland Systems',
+    automationFocus: 'Advanced Automation, IoT Monitoring',
+    materialFocus: 'Steel, Heavy-duty Rubber, Composites',
+    keyEndUseFocus: 'Mining, Cement, Bulk Materials',
+    goToMarketChannels: 'Direct Sales, Regional Partners',
+    serviceAftermarketStrength: 'Strong - Lifecycle Services',
     typicalPositioning: 'Premium',
-    keyDistributorIntegratorApproach: 'Exclusive Distributors, System Integrators',
-    keyInsights: 'Market leader in premium segment, strong brand recall'
+    keyDistributorIntegratorApproach: 'EPC Partners, Direct Project Sales',
+    keyInsights: '10% market share, leader in overland conveying and high-capacity bulk handling'
   },
   {
-    oemManufacturerName: 'ASSA ABLOY (Entrematic)',
-    hqCountry: 'Sweden',
-    primaryDoorTypeFocus: 'High-Speed, Sectional, Dock Equipment',
-    automationFocus: 'Advanced Automation, IoT Integration',
-    materialFocus: 'Steel, PVC, Composite',
-    keyEndUseFocus: 'Logistics, Cold Chain, Food & Beverage',
-    goToMarketChannels: 'Direct Sales, Channel Partners',
-    serviceAftermarketStrength: 'Strong - Global Service Standards',
-    typicalPositioning: 'Premium',
-    keyDistributorIntegratorApproach: 'Regional Distributors, EPC Partners',
-    keyInsights: 'Strong in cold chain, expanding logistics focus'
-  },
-  {
-    oemManufacturerName: 'Gandhi Automations',
-    hqCountry: 'India',
-    primaryDoorTypeFocus: 'High-Speed, Sectional, Rolling Shutters',
-    automationFocus: 'Semi to Full Automation',
-    materialFocus: 'Steel, Aluminum, PVC',
-    keyEndUseFocus: 'Manufacturing, Pharma, Automotive',
-    goToMarketChannels: 'Direct Sales, Dealer Network',
-    serviceAftermarketStrength: 'Strong - Extensive Local Network',
+    oemManufacturerName: 'Interroll Group',
+    hqCountry: 'Switzerland',
+    primaryDoorTypeFocus: 'Roller Conveyors, Belt Curves, Sorters',
+    automationFocus: 'Modular Automation, Plug-and-Play',
+    materialFocus: 'Steel, Aluminum, Engineered Plastics',
+    keyEndUseFocus: 'Logistics, E-commerce, Food & Beverage',
+    goToMarketChannels: 'OEM Partners, System Integrators',
+    serviceAftermarketStrength: 'Strong - Platform-based Support',
     typicalPositioning: 'Mid to Premium',
-    keyDistributorIntegratorApproach: 'Multi-tier Distribution, Direct Key Accounts',
-    keyInsights: 'Leading Indian player, strong service network'
+    keyDistributorIntegratorApproach: 'OEM/SI Ecosystem, Certified Partners',
+    keyInsights: '8% share, modular conveyor platform approach enables rapid deployment'
   },
   {
-    oemManufacturerName: 'Dynaco (ASSA ABLOY)',
-    hqCountry: 'Belgium',
-    primaryDoorTypeFocus: 'High-Speed Doors',
-    automationFocus: 'Full Automation, Self-Repair',
-    materialFocus: 'PVC, Fabric',
-    keyEndUseFocus: 'Food, Pharma, Clean Rooms',
-    goToMarketChannels: 'Direct Sales, Specialized Dealers',
-    serviceAftermarketStrength: 'Moderate - Partner Dependent',
-    typicalPositioning: 'Premium',
-    keyDistributorIntegratorApproach: 'Specialized Partners, OEM Tie-ups',
-    keyInsights: 'Niche player in hygienic high-speed doors'
-  },
-  {
-    oemManufacturerName: 'Rytec Corporation',
+    oemManufacturerName: 'Hytrol Conveyor Company',
     hqCountry: 'USA',
-    primaryDoorTypeFocus: 'High-Speed, Rubber Doors',
-    automationFocus: 'Full Automation, High Cycle',
-    materialFocus: 'Rubber, PVC, Steel',
-    keyEndUseFocus: 'Manufacturing, Automotive, Logistics',
-    goToMarketChannels: 'Direct Sales, Authorized Distributors',
-    serviceAftermarketStrength: 'Moderate - Select Cities',
-    typicalPositioning: 'Premium',
-    keyDistributorIntegratorApproach: 'Technical Distributors, Direct Sales',
-    keyInsights: 'Known for durability and crash-proof design'
-  },
-  {
-    oemManufacturerName: 'Infraca',
-    hqCountry: 'India',
-    primaryDoorTypeFocus: 'Industrial Doors, Dock Equipment',
+    primaryDoorTypeFocus: 'Belt Conveyors, Roller Conveyors, Gravity Systems',
     automationFocus: 'Semi to Full Automation',
-    materialFocus: 'Steel, Insulated Panels',
-    keyEndUseFocus: 'Logistics, Cold Chain, Manufacturing',
-    goToMarketChannels: 'Direct Sales, Regional Dealers',
-    serviceAftermarketStrength: 'Growing - Regional Focus',
-    typicalPositioning: 'Value to Mid',
-    keyDistributorIntegratorApproach: 'Regional Dealers, Direct Sales',
-    keyInsights: 'Growing player in value segment'
+    materialFocus: 'Steel, Galvanized, Stainless Steel',
+    keyEndUseFocus: 'Distribution, Manufacturing, Parcel Handling',
+    goToMarketChannels: 'Integration Partner Network (100+)',
+    serviceAftermarketStrength: 'Strong - Extensive US Network',
+    typicalPositioning: 'Mid',
+    keyDistributorIntegratorApproach: 'Exclusive Integration Partner Network',
+    keyInsights: '7% share, largest US conveyor manufacturer with 100+ integration partners'
   },
   {
-    oemManufacturerName: 'Kopron',
-    hqCountry: 'Italy',
-    primaryDoorTypeFocus: 'Sectional, Dock Equipment, Loading Systems',
-    automationFocus: 'Full Automation',
-    materialFocus: 'Steel, Aluminum',
-    keyEndUseFocus: 'Logistics, Manufacturing',
-    goToMarketChannels: 'Direct Sales, EPC Partners',
-    serviceAftermarketStrength: 'Moderate - Limited Network',
-    typicalPositioning: 'Mid to Premium',
-    keyDistributorIntegratorApproach: 'EPC Partners, Project Sales',
-    keyInsights: 'Strong in loading bay solutions'
-  },
-  {
-    oemManufacturerName: 'Efaflex',
+    oemManufacturerName: 'Coperion GmbH',
     hqCountry: 'Germany',
-    primaryDoorTypeFocus: 'High-Speed Doors',
-    automationFocus: 'Full Automation, Smart Controls',
-    materialFocus: 'Aluminum, PVC, Steel',
-    keyEndUseFocus: 'Automotive, Clean Rooms, Pharma',
+    primaryDoorTypeFocus: 'Pneumatic Conveying, Screw Conveyors, Feeders',
+    automationFocus: 'Full Automation, Process Integration',
+    materialFocus: 'Stainless Steel, Special Alloys',
+    keyEndUseFocus: 'Chemicals, Plastics, Food, Pharma',
     goToMarketChannels: 'Direct Sales, Technical Partners',
-    serviceAftermarketStrength: 'Strong - Specialized Service',
+    serviceAftermarketStrength: 'Strong - Global Service Centers',
     typicalPositioning: 'Premium',
-    keyDistributorIntegratorApproach: 'Technical Partners, OEM Integration',
-    keyInsights: 'Technology leader in high-speed segment'
-  }
+    keyDistributorIntegratorApproach: 'Direct Sales, Specialized SI Partners',
+    keyInsights: '6% share, leader in pneumatic conveying for process industries'
+  },
+  {
+    oemManufacturerName: 'Dorner Mfg. Corp.',
+    hqCountry: 'USA',
+    primaryDoorTypeFocus: 'Belt Conveyors, Modular Conveyors, Sanitary Systems',
+    automationFocus: 'Semi Automation, Clean-in-Place',
+    materialFocus: 'Stainless Steel, Engineered Plastics',
+    keyEndUseFocus: 'Food Processing, Pharma, Packaging',
+    goToMarketChannels: 'Distributor Network, Direct Sales',
+    serviceAftermarketStrength: 'Moderate - Partner Dependent',
+    typicalPositioning: 'Mid to Premium',
+    keyDistributorIntegratorApproach: 'Authorized Distributors, Direct OEM Sales',
+    keyInsights: '5% share, strong in sanitary/washdown conveyor applications'
+  },
+  {
+    oemManufacturerName: 'FlexLink AB',
+    hqCountry: 'Sweden',
+    primaryDoorTypeFocus: 'Chain Conveyors, Pallet Systems, Overhead Conveyors',
+    automationFocus: 'Full Automation, Line Integration',
+    materialFocus: 'Aluminum, Stainless Steel, Plastics',
+    keyEndUseFocus: 'Automotive, Electronics, Healthcare',
+    goToMarketChannels: 'Direct Sales, Authorized Partners',
+    serviceAftermarketStrength: 'Moderate - Regional Focus',
+    typicalPositioning: 'Mid to Premium',
+    keyDistributorIntegratorApproach: 'Regional Partners, Direct Key Accounts',
+    keyInsights: '5% share, known for flexible chain conveyor solutions in assembly lines'
+  },
+  {
+    oemManufacturerName: 'WAMGROUP S.p.A.',
+    hqCountry: 'Italy',
+    primaryDoorTypeFocus: 'Screw Conveyors, Vibrating Screens, Dust Filters',
+    automationFocus: 'Semi to Full Automation',
+    materialFocus: 'Carbon Steel, Stainless Steel',
+    keyEndUseFocus: 'Concrete, Mining, Waste Water, Chemicals',
+    goToMarketChannels: 'Direct Sales, Subsidiaries Worldwide',
+    serviceAftermarketStrength: 'Strong - 60+ Subsidiaries',
+    typicalPositioning: 'Value to Mid',
+    keyDistributorIntegratorApproach: 'Own Subsidiary Network, Local Dealers',
+    keyInsights: '4% share, world leader in screw conveyors for bulk solids handling'
+  },
+  {
+    oemManufacturerName: 'Key Technology (Duravant)',
+    hqCountry: 'USA',
+    primaryDoorTypeFocus: 'Vibratory Conveyors, Belt Conveyors, Sorters',
+    automationFocus: 'Full Automation, Vision-based Sorting',
+    materialFocus: 'Stainless Steel, Food-grade Materials',
+    keyEndUseFocus: 'Food Processing, Agriculture, Tobacco',
+    goToMarketChannels: 'Direct Sales, Food Industry SIs',
+    serviceAftermarketStrength: 'Moderate - Specialized Service',
+    typicalPositioning: 'Premium',
+    keyDistributorIntegratorApproach: 'Direct Sales, Industry-specific Partners',
+    keyInsights: '3% share, specialist in vibratory conveying with integrated digital sorting'
+  },
 ]
 
-// Sample data for Distributors
-const distributorData: DistributorData[] = [
-  {
-    distributorName: 'Kelley Material Handling India',
-    parentGroupHoldingCompany: '4Front Engineered Solutions',
-    hqCountry: 'USA',
-    countriesCovered: 'India, South Asia',
-    keyOEMBrandsCarried: 'Kelley, Serco, APS Resource',
-    channelType: 'Exclusive Distributor',
-    keyDoorTypesCovered: 'Dock Equipment, Sectional Doors',
-    automationCapability: 'Full Automation',
-    endUseFocus: 'Logistics, E-commerce, Manufacturing',
-    keyContactPerson: 'Vikram Mehta',
-    designation: 'Country Manager',
-    email: 'v.mehta@kelleyindia.com',
-    phoneWhatsApp: '+91 98765 11111',
-    linkedIn: 'linkedin.com/in/vikrammehta',
-    website: 'www.kelleyindia.com',
-    competitiveStrengths: 'Service reach, Fast response, OEM backing',
-    gapsWeaknesses: 'Limited cold-chain references'
-  },
-  {
-    distributorName: 'Techno Doors Pvt Ltd',
-    parentGroupHoldingCompany: 'Independent',
-    hqCountry: 'India',
-    countriesCovered: 'India',
-    keyOEMBrandsCarried: 'Gandhi Automations, Hormann, Local',
-    channelType: 'Multi-brand Dealer',
-    keyDoorTypesCovered: 'High-Speed, Rolling Shutters, Sectional',
-    automationCapability: 'Semi to Full',
-    endUseFocus: 'Manufacturing, Pharma, Food Processing',
-    keyContactPerson: 'Ramesh Agarwal',
-    designation: 'Managing Director',
-    email: 'ramesh@technodoors.in',
-    phoneWhatsApp: '+91 98234 22222',
-    linkedIn: 'linkedin.com/in/rameshagarwal',
-    website: 'www.technodoors.in',
-    competitiveStrengths: 'Local presence, Competitive pricing, Quick installation',
-    gapsWeaknesses: 'Limited premium segment experience'
-  },
-  {
-    distributorName: 'Cold Chain Solutions India',
-    parentGroupHoldingCompany: 'CCS Group',
-    hqCountry: 'India',
-    countriesCovered: 'India, Bangladesh, Nepal',
-    keyOEMBrandsCarried: 'ASSA ABLOY, Dynaco, Infraca',
-    channelType: 'EPC Contractor',
-    keyDoorTypesCovered: 'Cold Room Doors, High-Speed, Strip Curtains',
-    automationCapability: 'Full Automation',
-    endUseFocus: 'Cold Chain, Pharma, Food & Beverage',
-    keyContactPerson: 'Anjali Sharma',
-    designation: 'Business Head',
-    email: 'anjali@coldchainsolutions.in',
-    phoneWhatsApp: '+91 99887 33333',
-    linkedIn: 'linkedin.com/in/anjalisharma-ccs',
-    website: 'www.coldchainsolutions.in',
-    competitiveStrengths: 'Cold chain expertise, Turnkey solutions, Strong references',
-    gapsWeaknesses: 'Limited manufacturing sector presence'
-  },
-  {
-    distributorName: 'Industrial Access Systems',
-    parentGroupHoldingCompany: 'IAS Holdings',
-    hqCountry: 'India',
-    countriesCovered: 'India, Middle East',
-    keyOEMBrandsCarried: 'Rytec, Efaflex, Gandhi',
-    channelType: 'Authorized Distributor',
-    keyDoorTypesCovered: 'High-Speed, Crash Doors, Sectional',
-    automationCapability: 'Full Automation',
-    endUseFocus: 'Automotive, Manufacturing, Logistics',
-    keyContactPerson: 'Sunil Kapoor',
-    designation: 'Director - Sales',
-    email: 'sunil@iasystems.co.in',
-    phoneWhatsApp: '+91 98102 44444',
-    linkedIn: 'linkedin.com/in/sunilkapoor-ias',
-    website: 'www.iasystems.co.in',
-    competitiveStrengths: 'Technical expertise, OEM trained, Pan-India service',
-    gapsWeaknesses: 'Higher pricing vs local players'
-  },
-  {
-    distributorName: 'BuildTech Doors & Automation',
-    parentGroupHoldingCompany: 'BuildTech Group',
-    hqCountry: 'India',
-    countriesCovered: 'India',
-    keyOEMBrandsCarried: 'Kopron, Local Manufacturers',
-    channelType: 'Retailer / Dealer',
-    keyDoorTypesCovered: 'Sectional, Rolling, Dock Equipment',
-    automationCapability: 'Semi Automation',
-    endUseFocus: 'SME Manufacturing, Warehouses',
-    keyContactPerson: 'Pradeep Jain',
-    designation: 'Proprietor',
-    email: 'pradeep@buildtechdoors.com',
-    phoneWhatsApp: '+91 97654 55555',
-    linkedIn: 'linkedin.com/in/pradeepjain-bt',
-    website: 'www.buildtechdoors.com',
-    competitiveStrengths: 'Value pricing, Quick delivery, Local support',
-    gapsWeaknesses: 'Limited automation expertise, No premium brands'
-  },
-  {
-    distributorName: 'SafeEntry Solutions',
-    parentGroupHoldingCompany: 'Independent',
-    hqCountry: 'India',
-    countriesCovered: 'India',
-    keyOEMBrandsCarried: 'Hormann, ASSA ABLOY',
-    channelType: 'Authorized Dealer',
-    keyDoorTypesCovered: 'High-Speed, Fire Doors, Sectional',
-    automationCapability: 'Full Automation',
-    endUseFocus: 'Pharma, Clean Rooms, Data Centers',
-    keyContactPerson: 'Neha Gupta',
-    designation: 'CEO',
-    email: 'neha@safeentry.in',
-    phoneWhatsApp: '+91 98765 66666',
-    linkedIn: 'linkedin.com/in/nehagupta-se',
-    website: 'www.safeentry.in',
-    competitiveStrengths: 'Compliance expertise, Premium positioning, Strong references',
-    gapsWeaknesses: 'Limited geographic coverage'
-  }
+const distributorData = [
+  { distributorName: 'Handling Systems International', parentGroupHoldingCompany: 'Independent', hqCountry: 'USA', countriesCovered: 'USA, Canada, Mexico', keyOEMBrandsCarried: 'Hytrol, Dorner, Interroll', channelType: 'Value-Added Reseller', keyDoorTypesCovered: 'Belt, Roller, Chain Conveyors', automationCapability: 'Semi to Full Automation', endUseFocus: 'Distribution Centers, E-commerce', keyContactPerson: 'John Mitchell', designation: 'VP Sales', email: 'jmitchell@hsi.com', phoneWhatsApp: '+1-555-0101', linkedIn: 'linkedin.com/in/jmitchell', website: 'www.hsi.com', competitiveStrengths: 'Strong US network, multi-brand expertise', gapsWeaknesses: 'Limited MEA presence' },
+  { distributorName: 'Conveyor & Automation GmbH', parentGroupHoldingCompany: 'Independent', hqCountry: 'Germany', countriesCovered: 'Germany, Austria, Switzerland, BeNeLux', keyOEMBrandsCarried: 'BEUMER, Coperion, FlexLink', channelType: 'System Integrator', keyDoorTypesCovered: 'Bulk Handling, Screw, Pneumatic', automationCapability: 'Full Automation', endUseFocus: 'Industrial, Chemical, Mining', keyContactPerson: 'Klaus Werner', designation: 'Director', email: 'kwerner@ca-gmbh.de', phoneWhatsApp: '+49-555-0202', linkedIn: 'linkedin.com/in/kwerner', website: 'www.ca-gmbh.de', competitiveStrengths: 'Deep DACH expertise, engineering services', gapsWeaknesses: 'Limited Asia coverage' },
+  { distributorName: 'Asia Conveyor Solutions', parentGroupHoldingCompany: 'ACS Holdings', hqCountry: 'Singapore', countriesCovered: 'Singapore, Malaysia, Thailand, Indonesia, Vietnam', keyOEMBrandsCarried: 'Daifuku, Interroll, BEUMER', channelType: 'Regional Distributor', keyDoorTypesCovered: 'Overhead, Belt, AGVs', automationCapability: 'Full Automation, AI Sorting', endUseFocus: 'E-commerce, Automotive, Pharma', keyContactPerson: 'Mei Lin Tan', designation: 'CEO', email: 'mltan@acs.com.sg', phoneWhatsApp: '+65-555-0303', linkedIn: 'linkedin.com/in/mltan', website: 'www.acs.com.sg', competitiveStrengths: 'ASEAN coverage, multilingual support', gapsWeaknesses: 'Limited bulk handling expertise' },
 ]
+
 
 interface CompetitiveIntelligenceProps {
   height?: number
@@ -299,7 +201,7 @@ export function CompetitiveIntelligence({ height }: CompetitiveIntelligenceProps
               HQ Country
             </th>
             <th className="bg-[#FFF8DC] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[180px]">
-              Primary Door Type Focus
+              Primary Conveyor Type Focus
             </th>
             <th className="bg-[#FFF8DC] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[150px]">
               Automation Focus
