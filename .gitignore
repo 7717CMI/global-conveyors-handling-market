@@ -39,3 +39,24 @@ next-env.d.ts
 # local tools
 .claude/
 .playwright-mcp/
+
+# Source data files (large binaries — not for version control)
+*.xlsx
+*.pdf
+*.pptx
+*.docx
+
+# Agent working files
+.agent/
+screenshots/
+
+# Temp verification scripts
+read_excel.js
+read_val_header.js
+read_vol.js
+check_vol_structure.js
+crosscheck_na.js
+triple_verify.js
+validate_ui.js
+verify_values.js
+final_check.js
