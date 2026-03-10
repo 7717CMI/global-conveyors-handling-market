@@ -387,9 +387,15 @@ export function IntelligenceDataInput({
   ]
 
   const endUserSegments = [
-    'Residential',
-    'Commercial and Industrial',
-    'Utility-scale'
+    'Consumer Goods & Electronics',
+    'Automotive',
+    'Food & Beverages',
+    'Pharmaceutical',
+    'Construction',
+    'Mining',
+    'Semiconductors',
+    'Aviation',
+    'Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)'
   ]
 
   const distributorSegments = [

@@ -8,7 +8,7 @@ export interface Customer {
   name: string
   region: string
   endUserSegment: string
-  type: 'residential' | 'commercial' | 'utility'
+  type: 'manufacturing' | 'industrial' | 'ecommerce'
 }
 
 export interface CustomerIntelligenceData {
@@ -19,36 +19,59 @@ export interface CustomerIntelligenceData {
 }
 
 // Realistic customer name generators by type
-const residentialNames = [
-  'Solar Home', 'Rooftop Solar', 'Green Energy Home', 'SunPower Residential',
-  'HomeGrid Solar', 'Bright Home Energy', 'SolarEdge Home', 'EcoHome Solar',
-  'Smart Home Solar', 'Residential Power'
+const manufacturingLogisticsNames = [
+  'Logistics Hub', 'Distribution Center', 'Automated Warehouse', 'Fulfillment Center',
+  'Assembly Plant', 'Manufacturing Complex', 'Conveyor Systems Facility', 'Sortation Center',
+  'Material Handling Depot', 'Production Line Center', 'Packaging & Dispatch Hub',
+  'Industrial Logistics Park', 'Automation Center', 'Smart Factory', 'Supply Chain Hub'
 ]
 
-const commercialNames = [
-  'Industrial Solar Park', 'Commercial Solar Solutions', 'Business Energy Center',
-  'Solar Power Plant', 'Corporate Solar Hub', 'Enterprise Energy', 'Solar Campus',
-  'Factory Solar System'
+const industrialProcessingNames = [
+  'Mining Operations', 'Cement Works', 'Steel Processing', 'Chemical Plant',
+  'Refinery Terminal', 'Aggregate Handling Facility', 'Bulk Material Terminal',
+  'Quarry Processing Site', 'Heavy Industry Works', 'Ore Processing Plant',
+  'Construction Materials Depot', 'Metals & Alloys Plant', 'Industrial Processing Hub',
+  'Pulp & Paper Mill', 'Petrochemical Complex'
 ]
 
-const utilityNames = [
-  'Grid-Scale Solar Farm', 'Utility Solar Station', 'Power Grid Solar',
-  'Megawatt Solar Park', 'Regional Solar Utility', 'Solar Generation Station',
-  'Grid Solar Complex', 'Utility Power Station'
+const ecommerceRetailNames = [
+  'E-Commerce Fulfillment', 'Retail Distribution', 'Cold Chain Facility', 'Grocery DC',
+  'Parcel Sorting Hub', 'Last-Mile Distribution', 'Omnichannel Warehouse', 'Food Processing Center',
+  'Beverage Bottling Facility', 'Pharmaceutical Distribution', 'Frozen Storage Hub',
+  'Consumer Goods DC', 'Returns Processing Center', 'Cross-Dock Facility', 'Micro-Fulfillment Center'
 ]
 
 const locationSuffixes = [
-  'North', 'South', 'East', 'West', 'Central', 'Metro', 'Downtown', 'Uptown',
-  'Riverside', 'Parkview', 'Hillside', 'Valley', 'Coastal', 'Mountain'
+  'North', 'South', 'East', 'West', 'Central', 'Zone A', 'Zone B', 'Industrial Park',
+  'Terminal', 'Complex', 'Facility', 'Site', 'Depot', 'Works'
 ]
 
 // Region-specific prefixes
 const regionPrefixes: Record<string, string[]> = {
-  'North America': ['American', 'United', 'National', 'Regional', 'Metropolitan'],
-  'Latin America': ['Latino', 'Americas', 'Continental', 'Regional', 'National'],
-  'Europe': ['European', 'Continental', 'Regional', 'National', 'Metropolitan'],
-  'Asia Pacific': ['Asia', 'Pacific', 'Regional', 'National', 'Metropolitan'],
-  'Middle East & Africa': ['Middle East', 'Regional', 'National', 'Gulf', 'African']
+  'North America': ['American', 'National', 'Continental', 'Federal', 'Premier'],
+  'Latin America': ['Americas', 'Continental', 'Southern', 'Regional', 'National'],
+  'Europe': ['European', 'Continental', 'Euro', 'TransEurope', 'Unified'],
+  'Asia Pacific': ['Asia', 'Pacific', 'Trans-Pacific', 'Oriental', 'Pan-Asian'],
+  'Middle East & Africa': ['Gulf', 'African', 'Pan-African', 'Emirates', 'Regional']
+}
+
+// Map end-use industry segments to customer name categories
+const manufacturingSegments = [
+  'Consumer Goods & Electronics', 'Automotive', 'Semiconductors', 'Aviation'
+]
+const industrialSegments = [
+  'Construction', 'Mining', 'Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)'
+]
+const ecommerceSegments = [
+  'Food & Beverages', 'Pharmaceutical'
+]
+
+function getCustomerType(endUserSegment: string): 'manufacturing' | 'industrial' | 'ecommerce' {
+  if (manufacturingSegments.includes(endUserSegment)) return 'manufacturing'
+  if (industrialSegments.includes(endUserSegment)) return 'industrial'
+  if (ecommerceSegments.includes(endUserSegment)) return 'ecommerce'
+  // Default fallback
+  return 'manufacturing'
 }
 
 function generateCustomerName(region: string, endUserSegment: string, index: number): string {
@@ -56,22 +79,23 @@ function generateCustomerName(region: string, endUserSegment: string, index: num
   const prefix = prefixes[index % prefixes.length]
   const location = locationSuffixes[index % locationSuffixes.length]
 
+  const customerType = getCustomerType(endUserSegment)
   let baseName = ''
-  if (endUserSegment === 'Residential') {
-    baseName = residentialNames[index % residentialNames.length]
-  } else if (endUserSegment === 'Commercial and Industrial') {
-    baseName = commercialNames[index % commercialNames.length]
+  if (customerType === 'manufacturing') {
+    baseName = manufacturingLogisticsNames[index % manufacturingLogisticsNames.length]
+  } else if (customerType === 'industrial') {
+    baseName = industrialProcessingNames[index % industrialProcessingNames.length]
   } else {
-    baseName = utilityNames[index % utilityNames.length]
+    baseName = ecommerceRetailNames[index % ecommerceRetailNames.length]
   }
 
   return `${prefix} ${baseName} ${location}`
 }
 
 /**
- * Generate realistic customer counts based on region and end user segment
- * Residential typically has more installations in developed regions
- * Utility-scale is more concentrated in large markets
+ * Generate realistic customer counts based on region and end-use industry
+ * Consumer Goods & Electronics and Automotive have more facilities in developed regions
+ * Mining and Aviation are more concentrated in specific markets
  */
 // Deterministic seed function for consistent data generation
 function seededRandom(seed: number): () => number {
@@ -94,9 +118,15 @@ function generateCustomerCount(region: string, endUserSegment: string): number {
 
   // Base multipliers by end user type
   const segmentMultipliers: Record<string, number> = {
-    'Residential': 1.5,              // Most common
-    'Commercial and Industrial': 1.0, // Medium
-    'Utility-scale': 0.4              // Fewer but larger projects
+    'Consumer Goods & Electronics': 1.3,
+    'Automotive': 1.2,
+    'Food & Beverages': 1.1,
+    'Pharmaceutical': 0.8,
+    'Construction': 1.0,
+    'Mining': 0.6,
+    'Semiconductors': 0.7,
+    'Aviation': 0.5,
+    'Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)': 0.9
   }
 
   // Base count range
@@ -133,9 +163,15 @@ export function generateCustomerIntelligenceData(): CustomerIntelligenceData[] {
   ]
 
   const endUserSegments = [
-    'Residential',
-    'Commercial and Industrial',
-    'Utility-scale'
+    'Consumer Goods & Electronics',
+    'Automotive',
+    'Food & Beverages',
+    'Pharmaceutical',
+    'Construction',
+    'Mining',
+    'Semiconductors',
+    'Aviation',
+    'Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)'
   ]
 
   const data: CustomerIntelligenceData[] = []
@@ -152,9 +188,7 @@ export function generateCustomerIntelligenceData(): CustomerIntelligenceData[] {
           name: generateCustomerName(region, endUserSegment, i),
           region,
           endUserSegment,
-          type: endUserSegment === 'Residential' ? 'residential'
-                : endUserSegment === 'Commercial and Industrial' ? 'commercial'
-                : 'utility'
+          type: getCustomerType(endUserSegment)
         })
       }
 
@@ -359,16 +393,28 @@ export function parseCustomerIntelligenceFromData(rows: Record<string, any>[]): 
       }
     }
 
-    // Normalize end user segment
+    // Normalize end user segment to match conveyors & handling end-use industries
     let normalizedSegment = endUserSegment || null
     if (endUserSegment) {
       const lowerSegment = endUserSegment.toLowerCase()
-      if (lowerSegment.includes('residential') || lowerSegment.includes('home')) {
-        normalizedSegment = 'Residential'
-      } else if (lowerSegment.includes('commercial') || lowerSegment.includes('industrial')) {
-        normalizedSegment = 'Commercial and Industrial'
-      } else if (lowerSegment.includes('utility') || lowerSegment.includes('grid')) {
-        normalizedSegment = 'Utility-scale'
+      if (lowerSegment.includes('consumer goods') || lowerSegment.includes('electronics')) {
+        normalizedSegment = 'Consumer Goods & Electronics'
+      } else if (lowerSegment.includes('automotive') || lowerSegment.includes('auto')) {
+        normalizedSegment = 'Automotive'
+      } else if (lowerSegment.includes('food') || lowerSegment.includes('beverage')) {
+        normalizedSegment = 'Food & Beverages'
+      } else if (lowerSegment.includes('pharma')) {
+        normalizedSegment = 'Pharmaceutical'
+      } else if (lowerSegment.includes('construction')) {
+        normalizedSegment = 'Construction'
+      } else if (lowerSegment.includes('mining')) {
+        normalizedSegment = 'Mining'
+      } else if (lowerSegment.includes('semiconductor')) {
+        normalizedSegment = 'Semiconductors'
+      } else if (lowerSegment.includes('aviation') || lowerSegment.includes('aerospace')) {
+        normalizedSegment = 'Aviation'
+      } else if (lowerSegment.includes('chemical') || lowerSegment.includes('agriculture') || lowerSegment.includes('metal') || lowerSegment.includes('paper') || lowerSegment.includes('pulp')) {
+        normalizedSegment = 'Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)'
       } else {
         normalizedSegment = endUserSegment
       }
@@ -379,14 +425,29 @@ export function parseCustomerIntelligenceFromData(rows: Record<string, any>[]): 
       for (const key in row) {
         if (key.startsWith('_')) continue
         const value = String(row[key] || '').toLowerCase()
-        if (value.includes('residential') || value.includes('home')) {
-          normalizedSegment = 'Residential'
+        if (value.includes('consumer goods') || value.includes('electronics')) {
+          normalizedSegment = 'Consumer Goods & Electronics'
           break
-        } else if (value.includes('commercial') || value.includes('industrial')) {
-          normalizedSegment = 'Commercial and Industrial'
+        } else if (value.includes('automotive')) {
+          normalizedSegment = 'Automotive'
           break
-        } else if (value.includes('utility') || value.includes('grid')) {
-          normalizedSegment = 'Utility-scale'
+        } else if (value.includes('food') || value.includes('beverage')) {
+          normalizedSegment = 'Food & Beverages'
+          break
+        } else if (value.includes('pharma')) {
+          normalizedSegment = 'Pharmaceutical'
+          break
+        } else if (value.includes('construction')) {
+          normalizedSegment = 'Construction'
+          break
+        } else if (value.includes('mining')) {
+          normalizedSegment = 'Mining'
+          break
+        } else if (value.includes('semiconductor')) {
+          normalizedSegment = 'Semiconductors'
+          break
+        } else if (value.includes('aviation') || value.includes('aerospace')) {
+          normalizedSegment = 'Aviation'
           break
         }
       }
@@ -401,9 +462,7 @@ export function parseCustomerIntelligenceFromData(rows: Record<string, any>[]): 
       name: customerName,
       region: normalizedRegion,
       endUserSegment: normalizedSegment,
-      type: normalizedSegment === 'Residential' ? 'residential'
-            : normalizedSegment === 'Commercial and Industrial' ? 'commercial'
-            : 'utility'
+      type: getCustomerType(normalizedSegment)
     }
 
     // Group by region and segment

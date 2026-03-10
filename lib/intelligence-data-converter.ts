@@ -30,9 +30,9 @@ export function convertCustomerDataToIntelligenceFormat(
       name: customerData.name,
       region: customerData.region,
       endUserSegment: customerData.endUserSegment,
-      type: customerData.endUserSegment === 'Residential' ? 'residential'
-            : customerData.endUserSegment === 'Commercial and Industrial' ? 'commercial'
-            : 'utility'
+      type: ['Consumer Goods & Electronics', 'Automotive', 'Semiconductors', 'Aviation'].includes(customerData.endUserSegment) ? 'manufacturing'
+            : ['Construction', 'Mining', 'Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)'].includes(customerData.endUserSegment) ? 'industrial'
+            : 'ecommerce'
     }
     
     grouped.get(key)!.push(customer)

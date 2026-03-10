@@ -189,9 +189,15 @@ export function CustomerIntelligenceHeatmap({ title, height = 600, filePath }: C
     ]
     
     const defaultSegments = [
-      'Residential',
-      'Commercial and Industrial',
-      'Utility-scale'
+      'Consumer Goods & Electronics',
+      'Automotive',
+      'Food & Beverages',
+      'Pharmaceutical',
+      'Construction',
+      'Mining',
+      'Semiconductors',
+      'Aviation',
+      'Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)'
     ]
 
     // First, try to extract regions and segments from loaded customer data

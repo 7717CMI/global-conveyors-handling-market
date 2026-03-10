@@ -193,177 +193,191 @@ export async function loadCompetitiveIntelligenceData(): Promise<CompetitiveInte
   }
 }
 
-// Top pharmaceutical companies in head and neck cancer drugs market
+// Top companies in Global Conveyors & Handling Market
 const companies = [
-  'Gaudron Bedstar',
-  'Kandeltam',
-  'Hebei Xing Chemical',
-  'Hubei Jingchan Chutkan',
-  'Vishno Barium (V.C.)',
-  'Jiaxinxi Anheng Jianghua',
-  'Nippon Chemical Industrial',
-  'Sakai Chemical Industry',
+  'KION Group AG',
+  'Daifuku Co., Ltd.',
+  'Toyota Industries Corporation',
+  'SSI Schaefer',
+  'Jungheinrich AG',
+  'Honeywell Intelligrated',
+  'Interroll Group',
+  'Hytrol Conveyor Company',
+  'Murata Machinery (Muratec)',
   'Others'
 ]
 
 // Company colors using the enterprise palette
 const companyColors: Record<string, string> = {
-  'Gaudron Bedstar': '#52B69A',      // Teal
-  'Kandeltam': '#34A0A4',             // Medium Teal
-  'Hebei Xing Chemical': '#D9ED92',   // Yellow Green
-  'Hubei Jingchan Chutkan': '#184E77', // Navy Blue
-  'Vishno Barium (V.C.)': '#B5E48C',  // Light Lime
-  'Jiaxinxi Anheng Jianghua': '#1E6091', // Deep Blue
-  'Nippon Chemical Industrial': '#168AAD', // Deep Teal
-  'Sakai Chemical Industry': '#1A759F', // Blue Teal
-  'Others': '#99D98C'                 // Medium Green
+  'KION Group AG': '#52B69A',                // Teal
+  'Daifuku Co., Ltd.': '#34A0A4',            // Medium Teal
+  'Toyota Industries Corporation': '#D9ED92', // Yellow Green
+  'SSI Schaefer': '#184E77',                  // Navy Blue
+  'Jungheinrich AG': '#B5E48C',              // Light Lime
+  'Honeywell Intelligrated': '#1E6091',      // Deep Blue
+  'Interroll Group': '#168AAD',              // Deep Teal
+  'Hytrol Conveyor Company': '#1A759F',      // Blue Teal
+  'Murata Machinery (Muratec)': '#76C893',   // Fresh Green
+  'Others': '#99D98C'                        // Medium Green
 }
 
 // Headquarters locations
 const headquarters: Record<string, string> = {
-  'Gaudron Bedstar': 'New York, USA',
-  'Kandeltam': 'London, UK',
-  'Hebei Xing Chemical': 'Hebei, China',
-  'Hubei Jingchan Chutkan': 'Hubei, China',
-  'Vishno Barium (V.C.)': 'Mumbai, India',
-  'Jiaxinxi Anheng Jianghua': 'Jiangsu, China',
-  'Nippon Chemical Industrial': 'Tokyo, Japan',
-  'Sakai Chemical Industry': 'Osaka, Japan',
+  'KION Group AG': 'Frankfurt, Germany',
+  'Daifuku Co., Ltd.': 'Osaka, Japan',
+  'Toyota Industries Corporation': 'Kariya, Japan',
+  'SSI Schaefer': 'Neunkirchen, Germany',
+  'Jungheinrich AG': 'Hamburg, Germany',
+  'Honeywell Intelligrated': 'Mason, Ohio, USA',
+  'Interroll Group': 'Sant\'Antonino, Switzerland',
+  'Hytrol Conveyor Company': 'Jonesboro, Arkansas, USA',
+  'Murata Machinery (Muratec)': 'Kyoto, Japan',
   'Others': 'Various'
 }
 
-// CEOs (simulated names)
+// CEOs
 const ceos: Record<string, string> = {
-  'Gaudron Bedstar': 'Michael Anderson',
-  'Kandeltam': 'Sarah Williams',
-  'Hebei Xing Chemical': 'Zhang Wei',
-  'Hubei Jingchan Chutkan': 'Li Ming',
-  'Vishno Barium (V.C.)': 'Rajesh Kumar',
-  'Jiaxinxi Anheng Jianghua': 'Wang Xiaoping',
-  'Nippon Chemical Industrial': 'Takeshi Yamamoto',
-  'Sakai Chemical Industry': 'Hiroshi Tanaka',
+  'KION Group AG': 'Rob Smith',
+  'Daifuku Co., Ltd.': 'Hiroshi Geshiro',
+  'Toyota Industries Corporation': 'Toshifumi Onishi',
+  'SSI Schaefer': 'Steffen Bersch',
+  'Jungheinrich AG': 'Lars Brzoska',
+  'Honeywell Intelligrated': 'Ben Cardwell',
+  'Interroll Group': 'Ingo Steinkrüger',
+  'Hytrol Conveyor Company': 'David Peacock',
+  'Murata Machinery (Muratec)': 'Bunji Murata',
   'Others': 'Multiple'
 }
 
 // Year established
 const yearEstablished: Record<string, number> = {
-  'Gaudron Bedstar': 1985,
-  'Kandeltam': 1992,
-  'Hebei Xing Chemical': 2001,
-  'Hubei Jingchan Chutkan': 1998,
-  'Vishno Barium (V.C.)': 1987,
-  'Jiaxinxi Anheng Jianghua': 2003,
-  'Nippon Chemical Industrial': 1978,
-  'Sakai Chemical Industry': 1982,
+  'KION Group AG': 2006,
+  'Daifuku Co., Ltd.': 1937,
+  'Toyota Industries Corporation': 1926,
+  'SSI Schaefer': 1937,
+  'Jungheinrich AG': 1953,
+  'Honeywell Intelligrated': 2001,
+  'Interroll Group': 1959,
+  'Hytrol Conveyor Company': 1947,
+  'Murata Machinery (Muratec)': 1935,
   'Others': 0
 }
 
 // Product portfolios
 const portfolios: Record<string, string> = {
-  'Gaudron Bedstar': 'Immunotherapy, Targeted Therapy',
-  'Kandeltam': 'Chemotherapy, Clinical Trials',
-  'Hebei Xing Chemical': 'Generic Drugs, APIs',
-  'Hubei Jingchan Chutkan': 'Traditional Medicine, Oncology',
-  'Vishno Barium (V.C.)': 'Biosimilars, Generics',
-  'Jiaxinxi Anheng Jianghua': 'APIs, Intermediates',
-  'Nippon Chemical Industrial': 'Innovative Drugs, Biologics',
-  'Sakai Chemical Industry': 'Specialty Chemicals, Oncology',
-  'Others': 'Various Products'
+  'KION Group AG': 'Warehouse automation, AGVs/AMRs, Conveyors (Dematic brand)',
+  'Daifuku Co., Ltd.': 'Conveyor systems, AS/RS, Airport baggage handling',
+  'Toyota Industries Corporation': 'Forklifts, AGVs, Warehouse logistics (Toyota Material Handling)',
+  'SSI Schaefer': 'Racking & storage, Conveyor systems, Shuttle systems',
+  'Jungheinrich AG': 'Forklifts, AGVs, Warehouse management systems',
+  'Honeywell Intelligrated': 'Sortation systems, Conveyors, Palletizers',
+  'Interroll Group': 'Rollers, Conveyors, Sorters, Drum motors',
+  'Hytrol Conveyor Company': 'Belt conveyors, Roller conveyors, Gravity conveyors',
+  'Murata Machinery (Muratec)': 'AS/RS, Cleanroom handling, Shuttle systems',
+  'Others': 'Various conveyor & material handling equipment'
 }
 
 // Regional strengths
 const regionalStrengths: Record<string, string> = {
-  'Gaudron Bedstar': 'North America, Europe',
-  'Kandeltam': 'Europe, Asia Pacific',
-  'Hebei Xing Chemical': 'China, Southeast Asia',
-  'Hubei Jingchan Chutkan': 'China, Latin America',
-  'Vishno Barium (V.C.)': 'India, Middle East',
-  'Jiaxinxi Anheng Jianghua': 'China, Africa',
-  'Nippon Chemical Industrial': 'Japan, North America',
-  'Sakai Chemical Industry': 'Japan, Europe',
+  'KION Group AG': 'Europe, North America',
+  'Daifuku Co., Ltd.': 'Asia Pacific, North America',
+  'Toyota Industries Corporation': 'Asia Pacific, Global',
+  'SSI Schaefer': 'Europe, Asia Pacific',
+  'Jungheinrich AG': 'Europe, Latin America',
+  'Honeywell Intelligrated': 'North America, Europe',
+  'Interroll Group': 'Europe, Asia Pacific',
+  'Hytrol Conveyor Company': 'North America',
+  'Murata Machinery (Muratec)': 'Japan, Asia Pacific',
   'Others': 'Global'
 }
 
 // Market share percentages (must sum to 100)
 const marketShares: Record<string, number> = {
-  'Gaudron Bedstar': 25.0,
-  'Kandeltam': 8.0,
-  'Hebei Xing Chemical': 42.0,
-  'Hubei Jingchan Chutkan': 3.0,
-  'Vishno Barium (V.C.)': 5.0,
-  'Jiaxinxi Anheng Jianghua': 4.0,
-  'Nippon Chemical Industrial': 2.0,
-  'Sakai Chemical Industry': 1.0,
-  'Others': 10.0
+  'KION Group AG': 18.0,
+  'Daifuku Co., Ltd.': 15.0,
+  'Toyota Industries Corporation': 12.0,
+  'SSI Schaefer': 10.0,
+  'Jungheinrich AG': 8.0,
+  'Honeywell Intelligrated': 7.0,
+  'Interroll Group': 6.0,
+  'Hytrol Conveyor Company': 5.0,
+  'Murata Machinery (Muratec)': 4.0,
+  'Others': 15.0
 }
 
 // Generate strategies based on company type
 function generateStrategies(company: string): string[] {
   const strategyMap: Record<string, string[]> = {
-    'Gaudron Bedstar': ['Innovation Focus', 'M&A Strategy', 'Digital Health'],
-    'Kandeltam': ['Clinical Excellence', 'Partnership Model', 'EU Expansion'],
-    'Hebei Xing Chemical': ['Cost Leadership', 'Volume Growth', 'API Integration'],
-    'Hubei Jingchan Chutkan': ['Traditional Integration', 'Local Markets', 'R&D Investment'],
-    'Vishno Barium (V.C.)': ['Biosimilar Development', 'Emerging Markets', 'Affordability'],
-    'Jiaxinxi Anheng Jianghua': ['Supply Chain', 'Manufacturing Scale', 'Export Focus'],
-    'Nippon Chemical Industrial': ['Technology Innovation', 'Quality Excellence', 'Global Partnerships'],
-    'Sakai Chemical Industry': ['Niche Markets', 'Specialty Focus', 'Research Collaboration'],
-    'Others': ['Diverse Strategies', 'Regional Focus', 'Market Specific']
+    'KION Group AG': ['Warehouse Automation Leadership', 'Dematic Integration', 'Industry 4.0 Solutions'],
+    'Daifuku Co., Ltd.': ['Airport Logistics Expansion', 'AS/RS Innovation', 'Smart Factory Solutions'],
+    'Toyota Industries Corporation': ['Forklift Market Dominance', 'AGV Fleet Expansion', 'Lean Logistics'],
+    'SSI Schaefer': ['Modular Storage Systems', 'Shuttle Technology', 'E-Commerce Fulfillment'],
+    'Jungheinrich AG': ['Electric Fleet Transition', 'WMS Integration', 'European Expansion'],
+    'Honeywell Intelligrated': ['Sortation Technology', 'AI-Driven Optimization', 'Robotics Integration'],
+    'Interroll Group': ['Platform Strategy', 'Energy-Efficient Rollers', 'Modular Conveyor Design'],
+    'Hytrol Conveyor Company': ['Integration Partner Network', 'Custom Belt Solutions', 'Quick-Ship Programs'],
+    'Murata Machinery (Muratec)': ['Cleanroom Automation', 'Semiconductor Handling', 'Compact AS/RS'],
+    'Others': ['Regional Specialization', 'Niche Applications', 'Cost-Competitive Solutions']
   }
-  
+
   return strategyMap[company] || ['Market Development', 'Product Innovation', 'Strategic Partnerships']
 }
 
 // Generate propositions based on company type
 function generatePropositions(company: string): Proposition[] {
   const propositionMap: Record<string, Proposition[]> = {
-    'Gaudron Bedstar': [
-      { title: 'Advanced Immunotherapy Solutions', description: 'Leading-edge CAR-T cell therapy with 95% success rate in clinical trials', category: 'Product Innovation' },
-      { title: 'Personalized Treatment Plans', description: 'Customized treatment protocols based on genetic profiling', category: 'Service Excellence' },
-      { title: 'Global Clinical Network', description: 'Access to 200+ clinical trial sites worldwide', category: 'Market Reach' }
+    'KION Group AG': [
+      { title: 'Smart Warehouse Automation', description: 'End-to-end automated warehouse solutions powered by Dematic technology with AI-driven orchestration', category: 'Product Innovation' },
+      { title: 'AGV/AMR Fleet Management', description: 'Scalable autonomous mobile robot fleets with centralized fleet management software', category: 'Automation' },
+      { title: 'Global Service Network', description: '24/7 service and support across 100+ countries with predictive maintenance capabilities', category: 'Service Excellence' }
     ],
-    'Kandeltam': [
-      { title: 'Cost-Effective Chemotherapy', description: 'Generic alternatives at 40% lower cost than branded drugs', category: 'Price Advantage' },
-      { title: 'Regulatory Compliance', description: 'Full EU MDR and FDA compliance with fast-track approval', category: 'Regulatory' },
-      { title: 'Partnership Programs', description: 'Strategic alliances with 50+ European hospitals', category: 'Strategic Alliances' }
+    'Daifuku Co., Ltd.': [
+      { title: 'Airport Baggage Handling Excellence', description: 'Industry-leading baggage handling systems installed in 500+ airports worldwide', category: 'Market Leadership' },
+      { title: 'AS/RS Systems', description: 'High-density automated storage and retrieval systems with throughput rates exceeding 1,000 pallets/hour', category: 'Product Innovation' },
+      { title: 'Smart Factory Integration', description: 'Seamless conveyor integration with automotive and electronics manufacturing lines', category: 'Industry 4.0' }
     ],
-    'Hebei Xing Chemical': [
-      { title: 'Bulk API Manufacturing', description: 'World\'s largest API production capacity with 24/7 operations', category: 'Manufacturing Scale' },
-      { title: 'Supply Chain Integration', description: 'End-to-end supply chain from raw materials to finished products', category: 'Supply Chain' },
-      { title: 'Quality Assurance', description: 'ISO 9001 and cGMP certified with 99.8% quality rating', category: 'Quality Standards' }
+    'Toyota Industries Corporation': [
+      { title: 'Lean Material Handling', description: 'Toyota Production System principles applied to warehouse logistics and material flow optimization', category: 'Operational Excellence' },
+      { title: 'Electric Forklift Leadership', description: 'World\'s largest forklift manufacturer with zero-emission electric fleet solutions', category: 'Sustainability' },
+      { title: 'Integrated Logistics Solutions', description: 'Full-spectrum warehouse automation from forklifts to AGVs to conveyor systems', category: 'Comprehensive Solutions' }
     ],
-    'Hubei Jingchan Chutkan': [
-      { title: 'Traditional Medicine Integration', description: 'Combining ancient Chinese medicine with modern oncology treatments', category: 'Cultural Approach' },
-      { title: 'Local Market Expertise', description: 'Deep understanding of Asian and Latin American healthcare systems', category: 'Market Knowledge' },
-      { title: 'R&D Investment', description: 'Annual R&D investment of $50M in traditional medicine research', category: 'Research & Development' }
+    'SSI Schaefer': [
+      { title: 'Modular Shuttle Systems', description: 'Highly scalable shuttle-based storage systems adaptable to any warehouse footprint', category: 'Product Innovation' },
+      { title: 'E-Commerce Fulfillment', description: 'Purpose-built order fulfillment systems handling 100,000+ orders per day', category: 'Market Specialization' },
+      { title: 'Racking & Storage Engineering', description: 'Custom-engineered racking solutions optimizing cubic storage utilization by up to 85%', category: 'Engineering Excellence' }
     ],
-    'Vishno Barium (V.C.)': [
-      { title: 'Biosimilar Development', description: 'First-to-market biosimilars at 60% cost reduction', category: 'Biosimilars' },
-      { title: 'Emerging Market Focus', description: 'Specialized solutions for price-sensitive emerging markets', category: 'Market Strategy' },
-      { title: 'Affordable Healthcare', description: 'Making advanced treatments accessible to underserved populations', category: 'Social Impact' }
+    'Jungheinrich AG': [
+      { title: 'Energy-Efficient Fleet Solutions', description: 'Lithium-ion powered forklifts and AGVs reducing energy consumption by 30%', category: 'Sustainability' },
+      { title: 'Warehouse Management Software', description: 'Proprietary WMS integrating all material handling equipment under unified control', category: 'Digital Solutions' },
+      { title: 'Turnkey Warehouse Design', description: 'Complete warehouse planning, equipment, and software from a single source', category: 'Integrated Solutions' }
     ],
-    'Jiaxinxi Anheng Jianghua': [
-      { title: 'Export-Optimized Supply Chain', description: 'Streamlined logistics for global distribution with 48-hour delivery', category: 'Logistics' },
-      { title: 'Manufacturing Excellence', description: 'State-of-the-art facilities with automated production lines', category: 'Manufacturing' },
-      { title: 'Quality Control', description: 'Multi-stage QC process ensuring 100% batch consistency', category: 'Quality Assurance' }
+    'Honeywell Intelligrated': [
+      { title: 'Advanced Sortation Systems', description: 'High-speed sortation systems processing 20,000+ items per hour with 99.9% accuracy', category: 'Product Innovation' },
+      { title: 'AI-Powered Optimization', description: 'Machine learning algorithms optimizing conveyor throughput and reducing downtime by 40%', category: 'Technology' },
+      { title: 'Lifecycle Management', description: 'Comprehensive lifecycle support from design through operation with IoT-enabled monitoring', category: 'Service Excellence' }
     ],
-    'Nippon Chemical Industrial': [
-      { title: 'Technology Innovation', description: 'AI-powered drug discovery platform reducing development time by 40%', category: 'Technology' },
-      { title: 'Quality Excellence', description: 'Zero-defect manufacturing with Six Sigma certification', category: 'Quality Standards' },
-      { title: 'Global Partnerships', description: 'Strategic collaborations with top 10 pharma companies worldwide', category: 'Strategic Partnerships' }
+    'Interroll Group': [
+      { title: 'Energy-Efficient Belt Systems', description: 'EC motor-driven roller conveyors reducing energy use by 50% vs. conventional systems', category: 'Sustainability' },
+      { title: 'Modular Platform Approach', description: 'Standardized modular conveyor platforms enabling rapid deployment and reconfiguration', category: 'Product Design' },
+      { title: 'Drum Motor Technology', description: 'Patented drum motor solutions providing compact, hygienic drive for food and pharma conveyors', category: 'Technology Leadership' }
     ],
-    'Sakai Chemical Industry': [
-      { title: 'Specialty Chemical Solutions', description: 'Custom-formulated specialty chemicals for niche oncology applications', category: 'Specialty Products' },
-      { title: 'Research Collaboration', description: 'Active partnerships with 15 leading research institutions', category: 'Research Partnerships' },
-      { title: 'Niche Market Expertise', description: 'Deep specialization in rare cancer treatments', category: 'Market Specialization' }
+    'Hytrol Conveyor Company': [
+      { title: 'Integration Partner Network', description: 'Largest North American integration partner network with 100+ certified system integrators', category: 'Channel Strategy' },
+      { title: 'Quick-Ship Conveyor Programs', description: 'Industry-leading 2-week delivery on standard belt and roller conveyor configurations', category: 'Speed to Market' },
+      { title: 'E24 Conveyor Innovation', description: 'Next-generation 24V motorized driven roller conveyors for flexible, zone-controlled material flow', category: 'Product Innovation' }
+    ],
+    'Murata Machinery (Muratec)': [
+      { title: 'Cleanroom Material Handling', description: 'Ultra-clean automated transport systems for semiconductor fabs with ISO Class 1 compatibility', category: 'Niche Specialization' },
+      { title: 'Compact AS/RS Solutions', description: 'Space-saving automated storage systems designed for high-density environments', category: 'Product Innovation' },
+      { title: 'Industry 4.0 Integration', description: 'IoT-connected handling systems with real-time monitoring and predictive analytics', category: 'Digital Transformation' }
     ],
     'Others': [
-      { title: 'Market-Specific Solutions', description: 'Tailored products and services for regional market needs', category: 'Market Adaptation' },
-      { title: 'Regional Focus', description: 'Strong presence in local markets with cultural understanding', category: 'Local Expertise' },
-      { title: 'Diverse Product Portfolio', description: 'Wide range of products covering multiple therapeutic areas', category: 'Product Diversity' }
+      { title: 'Regional Market Solutions', description: 'Tailored conveyor and handling systems for local industry requirements and regulations', category: 'Market Adaptation' },
+      { title: 'Specialized Applications', description: 'Niche conveyor solutions for mining, food processing, and heavy industrial applications', category: 'Specialization' },
+      { title: 'Cost-Competitive Systems', description: 'Value-engineered material handling equipment for budget-conscious operations', category: 'Value Proposition' }
     ]
   }
-  
+
   return propositionMap[company] || [
     { title: 'Market Development', description: 'Expanding into new markets and segments', category: 'Market Strategy' },
     { title: 'Product Innovation', description: 'Continuous R&D and product development', category: 'Innovation' },
@@ -373,8 +387,8 @@ function generatePropositions(company: string): Proposition[] {
 
 // Generate revenue based on market share
 function generateRevenue(marketShare: number): { overall: number, segmental: number } {
-  // Total market size approximately 5000 USD Mn
-  const totalMarketSize = 5000
+  // Total market size approximately $270,295 USD Mn (Global Conveyors & Handling Market, 2025)
+  const totalMarketSize = 270295
   const segmentalRevenue = (marketShare / 100) * totalMarketSize
   
   // Overall revenue is typically 3-5x the segmental revenue (company has other products)
