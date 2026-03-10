@@ -38,11 +38,39 @@
       "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
     },
     "By Region": {
-      "North America": {},
-      "Europe": {},
-      "Asia Pacific": {},
-      "Middle East & Africa": {},
-      "Latin America": {}
+      "North America": {
+        "U.S.": {},
+        "Canada": {}
+      },
+      "Europe": {
+        "U.K.": {},
+        "Germany": {},
+        "Italy": {},
+        "France": {},
+        "Spain": {},
+        "Russia": {},
+        "Rest of Europe": {}
+      },
+      "Asia Pacific": {
+        "China": {},
+        "India": {},
+        "Japan": {},
+        "South Korea": {},
+        "ASEAN": {},
+        "Australia": {},
+        "Rest of Asia Pacific": {}
+      },
+      "Middle East & Africa": {
+        "GCC": {},
+        "South Africa": {},
+        "Rest of Middle East & Africa": {}
+      },
+      "Latin America": {
+        "Brazil": {},
+        "Mexico": {},
+        "Argentina": {},
+        "Rest of Latin America": {}
+      }
     }
   },
   "North America": {
@@ -82,6 +110,10 @@
       "Semiconductors": {},
       "Aviation": {},
       "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
+    },
+    "By Region": {
+      "U.S.": {},
+      "Canada": {}
     }
   },
   "Europe": {
@@ -121,6 +153,15 @@
       "Semiconductors": {},
       "Aviation": {},
       "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
+    },
+    "By Region": {
+      "U.K.": {},
+      "Germany": {},
+      "Italy": {},
+      "France": {},
+      "Spain": {},
+      "Russia": {},
+      "Rest of Europe": {}
     }
   },
   "Asia Pacific": {
@@ -160,6 +201,15 @@
       "Semiconductors": {},
       "Aviation": {},
       "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
+    },
+    "By Region": {
+      "China": {},
+      "India": {},
+      "Japan": {},
+      "South Korea": {},
+      "ASEAN": {},
+      "Australia": {},
+      "Rest of Asia Pacific": {}
     }
   },
   "Middle East & Africa": {
@@ -199,9 +249,917 @@
       "Semiconductors": {},
       "Aviation": {},
       "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
+    },
+    "By Region": {
+      "GCC": {},
+      "South Africa": {},
+      "Rest of Middle East & Africa": {}
     }
   },
   "Latin America": {
+    "By Equipment Type": {
+      "Transport Equipment": {
+        "Conveyors": {
+          "Belt Conveyors": {},
+          "Roller Conveyors": {},
+          "Chain Conveyors": {},
+          "Wheel Conveyors": {},
+          "Others (Vertical, Screw, Pneumatic, Bucket)": {}
+        },
+        "Industrial Trucks": {},
+        "Automated Guided Vehicles (AGVs / AMRs)": {},
+        "Cranes": {},
+        "Others (Hoppers, Reclaimers)": {}
+      },
+      "Handling Equipment": {},
+      "Racking & Storage Equipment": {},
+      "Others (Unit Load Formation, Identification & Control Equipment)": {}
+    },
+    "By Automation Level": {
+      "Manual Equipment": {},
+      "Semi Automatic & Automatic Equipment": {}
+    },
+    "By System Integration": {
+      "Standalone Systems": {},
+      "Integrated Systems": {}
+    },
+    "By End-Use Industry": {
+      "Consumer Goods & Electronics": {},
+      "Automotive": {},
+      "Food & Beverages": {},
+      "Pharmaceutical": {},
+      "Construction": {},
+      "Mining": {},
+      "Semiconductors": {},
+      "Aviation": {},
+      "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
+    },
+    "By Region": {
+      "Brazil": {},
+      "Mexico": {},
+      "Argentina": {},
+      "Rest of Latin America": {}
+    }
+  },
+  "U.S.": {
+    "By Equipment Type": {
+      "Transport Equipment": {
+        "Conveyors": {
+          "Belt Conveyors": {},
+          "Roller Conveyors": {},
+          "Chain Conveyors": {},
+          "Wheel Conveyors": {},
+          "Others (Vertical, Screw, Pneumatic, Bucket)": {}
+        },
+        "Industrial Trucks": {},
+        "Automated Guided Vehicles (AGVs / AMRs)": {},
+        "Cranes": {},
+        "Others (Hoppers, Reclaimers)": {}
+      },
+      "Handling Equipment": {},
+      "Racking & Storage Equipment": {},
+      "Others (Unit Load Formation, Identification & Control Equipment)": {}
+    },
+    "By Automation Level": {
+      "Manual Equipment": {},
+      "Semi Automatic & Automatic Equipment": {}
+    },
+    "By System Integration": {
+      "Standalone Systems": {},
+      "Integrated Systems": {}
+    },
+    "By End-Use Industry": {
+      "Consumer Goods & Electronics": {},
+      "Automotive": {},
+      "Food & Beverages": {},
+      "Pharmaceutical": {},
+      "Construction": {},
+      "Mining": {},
+      "Semiconductors": {},
+      "Aviation": {},
+      "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
+    }
+  },
+  "Canada": {
+    "By Equipment Type": {
+      "Transport Equipment": {
+        "Conveyors": {
+          "Belt Conveyors": {},
+          "Roller Conveyors": {},
+          "Chain Conveyors": {},
+          "Wheel Conveyors": {},
+          "Others (Vertical, Screw, Pneumatic, Bucket)": {}
+        },
+        "Industrial Trucks": {},
+        "Automated Guided Vehicles (AGVs / AMRs)": {},
+        "Cranes": {},
+        "Others (Hoppers, Reclaimers)": {}
+      },
+      "Handling Equipment": {},
+      "Racking & Storage Equipment": {},
+      "Others (Unit Load Formation, Identification & Control Equipment)": {}
+    },
+    "By Automation Level": {
+      "Manual Equipment": {},
+      "Semi Automatic & Automatic Equipment": {}
+    },
+    "By System Integration": {
+      "Standalone Systems": {},
+      "Integrated Systems": {}
+    },
+    "By End-Use Industry": {
+      "Consumer Goods & Electronics": {},
+      "Automotive": {},
+      "Food & Beverages": {},
+      "Pharmaceutical": {},
+      "Construction": {},
+      "Mining": {},
+      "Semiconductors": {},
+      "Aviation": {},
+      "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
+    }
+  },
+  "U.K.": {
+    "By Equipment Type": {
+      "Transport Equipment": {
+        "Conveyors": {
+          "Belt Conveyors": {},
+          "Roller Conveyors": {},
+          "Chain Conveyors": {},
+          "Wheel Conveyors": {},
+          "Others (Vertical, Screw, Pneumatic, Bucket)": {}
+        },
+        "Industrial Trucks": {},
+        "Automated Guided Vehicles (AGVs / AMRs)": {},
+        "Cranes": {},
+        "Others (Hoppers, Reclaimers)": {}
+      },
+      "Handling Equipment": {},
+      "Racking & Storage Equipment": {},
+      "Others (Unit Load Formation, Identification & Control Equipment)": {}
+    },
+    "By Automation Level": {
+      "Manual Equipment": {},
+      "Semi Automatic & Automatic Equipment": {}
+    },
+    "By System Integration": {
+      "Standalone Systems": {},
+      "Integrated Systems": {}
+    },
+    "By End-Use Industry": {
+      "Consumer Goods & Electronics": {},
+      "Automotive": {},
+      "Food & Beverages": {},
+      "Pharmaceutical": {},
+      "Construction": {},
+      "Mining": {},
+      "Semiconductors": {},
+      "Aviation": {},
+      "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
+    }
+  },
+  "Germany": {
+    "By Equipment Type": {
+      "Transport Equipment": {
+        "Conveyors": {
+          "Belt Conveyors": {},
+          "Roller Conveyors": {},
+          "Chain Conveyors": {},
+          "Wheel Conveyors": {},
+          "Others (Vertical, Screw, Pneumatic, Bucket)": {}
+        },
+        "Industrial Trucks": {},
+        "Automated Guided Vehicles (AGVs / AMRs)": {},
+        "Cranes": {},
+        "Others (Hoppers, Reclaimers)": {}
+      },
+      "Handling Equipment": {},
+      "Racking & Storage Equipment": {},
+      "Others (Unit Load Formation, Identification & Control Equipment)": {}
+    },
+    "By Automation Level": {
+      "Manual Equipment": {},
+      "Semi Automatic & Automatic Equipment": {}
+    },
+    "By System Integration": {
+      "Standalone Systems": {},
+      "Integrated Systems": {}
+    },
+    "By End-Use Industry": {
+      "Consumer Goods & Electronics": {},
+      "Automotive": {},
+      "Food & Beverages": {},
+      "Pharmaceutical": {},
+      "Construction": {},
+      "Mining": {},
+      "Semiconductors": {},
+      "Aviation": {},
+      "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
+    }
+  },
+  "Italy": {
+    "By Equipment Type": {
+      "Transport Equipment": {
+        "Conveyors": {
+          "Belt Conveyors": {},
+          "Roller Conveyors": {},
+          "Chain Conveyors": {},
+          "Wheel Conveyors": {},
+          "Others (Vertical, Screw, Pneumatic, Bucket)": {}
+        },
+        "Industrial Trucks": {},
+        "Automated Guided Vehicles (AGVs / AMRs)": {},
+        "Cranes": {},
+        "Others (Hoppers, Reclaimers)": {}
+      },
+      "Handling Equipment": {},
+      "Racking & Storage Equipment": {},
+      "Others (Unit Load Formation, Identification & Control Equipment)": {}
+    },
+    "By Automation Level": {
+      "Manual Equipment": {},
+      "Semi Automatic & Automatic Equipment": {}
+    },
+    "By System Integration": {
+      "Standalone Systems": {},
+      "Integrated Systems": {}
+    },
+    "By End-Use Industry": {
+      "Consumer Goods & Electronics": {},
+      "Automotive": {},
+      "Food & Beverages": {},
+      "Pharmaceutical": {},
+      "Construction": {},
+      "Mining": {},
+      "Semiconductors": {},
+      "Aviation": {},
+      "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
+    }
+  },
+  "France": {
+    "By Equipment Type": {
+      "Transport Equipment": {
+        "Conveyors": {
+          "Belt Conveyors": {},
+          "Roller Conveyors": {},
+          "Chain Conveyors": {},
+          "Wheel Conveyors": {},
+          "Others (Vertical, Screw, Pneumatic, Bucket)": {}
+        },
+        "Industrial Trucks": {},
+        "Automated Guided Vehicles (AGVs / AMRs)": {},
+        "Cranes": {},
+        "Others (Hoppers, Reclaimers)": {}
+      },
+      "Handling Equipment": {},
+      "Racking & Storage Equipment": {},
+      "Others (Unit Load Formation, Identification & Control Equipment)": {}
+    },
+    "By Automation Level": {
+      "Manual Equipment": {},
+      "Semi Automatic & Automatic Equipment": {}
+    },
+    "By System Integration": {
+      "Standalone Systems": {},
+      "Integrated Systems": {}
+    },
+    "By End-Use Industry": {
+      "Consumer Goods & Electronics": {},
+      "Automotive": {},
+      "Food & Beverages": {},
+      "Pharmaceutical": {},
+      "Construction": {},
+      "Mining": {},
+      "Semiconductors": {},
+      "Aviation": {},
+      "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
+    }
+  },
+  "Spain": {
+    "By Equipment Type": {
+      "Transport Equipment": {
+        "Conveyors": {
+          "Belt Conveyors": {},
+          "Roller Conveyors": {},
+          "Chain Conveyors": {},
+          "Wheel Conveyors": {},
+          "Others (Vertical, Screw, Pneumatic, Bucket)": {}
+        },
+        "Industrial Trucks": {},
+        "Automated Guided Vehicles (AGVs / AMRs)": {},
+        "Cranes": {},
+        "Others (Hoppers, Reclaimers)": {}
+      },
+      "Handling Equipment": {},
+      "Racking & Storage Equipment": {},
+      "Others (Unit Load Formation, Identification & Control Equipment)": {}
+    },
+    "By Automation Level": {
+      "Manual Equipment": {},
+      "Semi Automatic & Automatic Equipment": {}
+    },
+    "By System Integration": {
+      "Standalone Systems": {},
+      "Integrated Systems": {}
+    },
+    "By End-Use Industry": {
+      "Consumer Goods & Electronics": {},
+      "Automotive": {},
+      "Food & Beverages": {},
+      "Pharmaceutical": {},
+      "Construction": {},
+      "Mining": {},
+      "Semiconductors": {},
+      "Aviation": {},
+      "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
+    }
+  },
+  "Russia": {
+    "By Equipment Type": {
+      "Transport Equipment": {
+        "Conveyors": {
+          "Belt Conveyors": {},
+          "Roller Conveyors": {},
+          "Chain Conveyors": {},
+          "Wheel Conveyors": {},
+          "Others (Vertical, Screw, Pneumatic, Bucket)": {}
+        },
+        "Industrial Trucks": {},
+        "Automated Guided Vehicles (AGVs / AMRs)": {},
+        "Cranes": {},
+        "Others (Hoppers, Reclaimers)": {}
+      },
+      "Handling Equipment": {},
+      "Racking & Storage Equipment": {},
+      "Others (Unit Load Formation, Identification & Control Equipment)": {}
+    },
+    "By Automation Level": {
+      "Manual Equipment": {},
+      "Semi Automatic & Automatic Equipment": {}
+    },
+    "By System Integration": {
+      "Standalone Systems": {},
+      "Integrated Systems": {}
+    },
+    "By End-Use Industry": {
+      "Consumer Goods & Electronics": {},
+      "Automotive": {},
+      "Food & Beverages": {},
+      "Pharmaceutical": {},
+      "Construction": {},
+      "Mining": {},
+      "Semiconductors": {},
+      "Aviation": {},
+      "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
+    }
+  },
+  "Rest of Europe": {
+    "By Equipment Type": {
+      "Transport Equipment": {
+        "Conveyors": {
+          "Belt Conveyors": {},
+          "Roller Conveyors": {},
+          "Chain Conveyors": {},
+          "Wheel Conveyors": {},
+          "Others (Vertical, Screw, Pneumatic, Bucket)": {}
+        },
+        "Industrial Trucks": {},
+        "Automated Guided Vehicles (AGVs / AMRs)": {},
+        "Cranes": {},
+        "Others (Hoppers, Reclaimers)": {}
+      },
+      "Handling Equipment": {},
+      "Racking & Storage Equipment": {},
+      "Others (Unit Load Formation, Identification & Control Equipment)": {}
+    },
+    "By Automation Level": {
+      "Manual Equipment": {},
+      "Semi Automatic & Automatic Equipment": {}
+    },
+    "By System Integration": {
+      "Standalone Systems": {},
+      "Integrated Systems": {}
+    },
+    "By End-Use Industry": {
+      "Consumer Goods & Electronics": {},
+      "Automotive": {},
+      "Food & Beverages": {},
+      "Pharmaceutical": {},
+      "Construction": {},
+      "Mining": {},
+      "Semiconductors": {},
+      "Aviation": {},
+      "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
+    }
+  },
+  "China": {
+    "By Equipment Type": {
+      "Transport Equipment": {
+        "Conveyors": {
+          "Belt Conveyors": {},
+          "Roller Conveyors": {},
+          "Chain Conveyors": {},
+          "Wheel Conveyors": {},
+          "Others (Vertical, Screw, Pneumatic, Bucket)": {}
+        },
+        "Industrial Trucks": {},
+        "Automated Guided Vehicles (AGVs / AMRs)": {},
+        "Cranes": {},
+        "Others (Hoppers, Reclaimers)": {}
+      },
+      "Handling Equipment": {},
+      "Racking & Storage Equipment": {},
+      "Others (Unit Load Formation, Identification & Control Equipment)": {}
+    },
+    "By Automation Level": {
+      "Manual Equipment": {},
+      "Semi Automatic & Automatic Equipment": {}
+    },
+    "By System Integration": {
+      "Standalone Systems": {},
+      "Integrated Systems": {}
+    },
+    "By End-Use Industry": {
+      "Consumer Goods & Electronics": {},
+      "Automotive": {},
+      "Food & Beverages": {},
+      "Pharmaceutical": {},
+      "Construction": {},
+      "Mining": {},
+      "Semiconductors": {},
+      "Aviation": {},
+      "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
+    }
+  },
+  "India": {
+    "By Equipment Type": {
+      "Transport Equipment": {
+        "Conveyors": {
+          "Belt Conveyors": {},
+          "Roller Conveyors": {},
+          "Chain Conveyors": {},
+          "Wheel Conveyors": {},
+          "Others (Vertical, Screw, Pneumatic, Bucket)": {}
+        },
+        "Industrial Trucks": {},
+        "Automated Guided Vehicles (AGVs / AMRs)": {},
+        "Cranes": {},
+        "Others (Hoppers, Reclaimers)": {}
+      },
+      "Handling Equipment": {},
+      "Racking & Storage Equipment": {},
+      "Others (Unit Load Formation, Identification & Control Equipment)": {}
+    },
+    "By Automation Level": {
+      "Manual Equipment": {},
+      "Semi Automatic & Automatic Equipment": {}
+    },
+    "By System Integration": {
+      "Standalone Systems": {},
+      "Integrated Systems": {}
+    },
+    "By End-Use Industry": {
+      "Consumer Goods & Electronics": {},
+      "Automotive": {},
+      "Food & Beverages": {},
+      "Pharmaceutical": {},
+      "Construction": {},
+      "Mining": {},
+      "Semiconductors": {},
+      "Aviation": {},
+      "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
+    }
+  },
+  "Japan": {
+    "By Equipment Type": {
+      "Transport Equipment": {
+        "Conveyors": {
+          "Belt Conveyors": {},
+          "Roller Conveyors": {},
+          "Chain Conveyors": {},
+          "Wheel Conveyors": {},
+          "Others (Vertical, Screw, Pneumatic, Bucket)": {}
+        },
+        "Industrial Trucks": {},
+        "Automated Guided Vehicles (AGVs / AMRs)": {},
+        "Cranes": {},
+        "Others (Hoppers, Reclaimers)": {}
+      },
+      "Handling Equipment": {},
+      "Racking & Storage Equipment": {},
+      "Others (Unit Load Formation, Identification & Control Equipment)": {}
+    },
+    "By Automation Level": {
+      "Manual Equipment": {},
+      "Semi Automatic & Automatic Equipment": {}
+    },
+    "By System Integration": {
+      "Standalone Systems": {},
+      "Integrated Systems": {}
+    },
+    "By End-Use Industry": {
+      "Consumer Goods & Electronics": {},
+      "Automotive": {},
+      "Food & Beverages": {},
+      "Pharmaceutical": {},
+      "Construction": {},
+      "Mining": {},
+      "Semiconductors": {},
+      "Aviation": {},
+      "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
+    }
+  },
+  "South Korea": {
+    "By Equipment Type": {
+      "Transport Equipment": {
+        "Conveyors": {
+          "Belt Conveyors": {},
+          "Roller Conveyors": {},
+          "Chain Conveyors": {},
+          "Wheel Conveyors": {},
+          "Others (Vertical, Screw, Pneumatic, Bucket)": {}
+        },
+        "Industrial Trucks": {},
+        "Automated Guided Vehicles (AGVs / AMRs)": {},
+        "Cranes": {},
+        "Others (Hoppers, Reclaimers)": {}
+      },
+      "Handling Equipment": {},
+      "Racking & Storage Equipment": {},
+      "Others (Unit Load Formation, Identification & Control Equipment)": {}
+    },
+    "By Automation Level": {
+      "Manual Equipment": {},
+      "Semi Automatic & Automatic Equipment": {}
+    },
+    "By System Integration": {
+      "Standalone Systems": {},
+      "Integrated Systems": {}
+    },
+    "By End-Use Industry": {
+      "Consumer Goods & Electronics": {},
+      "Automotive": {},
+      "Food & Beverages": {},
+      "Pharmaceutical": {},
+      "Construction": {},
+      "Mining": {},
+      "Semiconductors": {},
+      "Aviation": {},
+      "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
+    }
+  },
+  "ASEAN": {
+    "By Equipment Type": {
+      "Transport Equipment": {
+        "Conveyors": {
+          "Belt Conveyors": {},
+          "Roller Conveyors": {},
+          "Chain Conveyors": {},
+          "Wheel Conveyors": {},
+          "Others (Vertical, Screw, Pneumatic, Bucket)": {}
+        },
+        "Industrial Trucks": {},
+        "Automated Guided Vehicles (AGVs / AMRs)": {},
+        "Cranes": {},
+        "Others (Hoppers, Reclaimers)": {}
+      },
+      "Handling Equipment": {},
+      "Racking & Storage Equipment": {},
+      "Others (Unit Load Formation, Identification & Control Equipment)": {}
+    },
+    "By Automation Level": {
+      "Manual Equipment": {},
+      "Semi Automatic & Automatic Equipment": {}
+    },
+    "By System Integration": {
+      "Standalone Systems": {},
+      "Integrated Systems": {}
+    },
+    "By End-Use Industry": {
+      "Consumer Goods & Electronics": {},
+      "Automotive": {},
+      "Food & Beverages": {},
+      "Pharmaceutical": {},
+      "Construction": {},
+      "Mining": {},
+      "Semiconductors": {},
+      "Aviation": {},
+      "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
+    }
+  },
+  "Australia": {
+    "By Equipment Type": {
+      "Transport Equipment": {
+        "Conveyors": {
+          "Belt Conveyors": {},
+          "Roller Conveyors": {},
+          "Chain Conveyors": {},
+          "Wheel Conveyors": {},
+          "Others (Vertical, Screw, Pneumatic, Bucket)": {}
+        },
+        "Industrial Trucks": {},
+        "Automated Guided Vehicles (AGVs / AMRs)": {},
+        "Cranes": {},
+        "Others (Hoppers, Reclaimers)": {}
+      },
+      "Handling Equipment": {},
+      "Racking & Storage Equipment": {},
+      "Others (Unit Load Formation, Identification & Control Equipment)": {}
+    },
+    "By Automation Level": {
+      "Manual Equipment": {},
+      "Semi Automatic & Automatic Equipment": {}
+    },
+    "By System Integration": {
+      "Standalone Systems": {},
+      "Integrated Systems": {}
+    },
+    "By End-Use Industry": {
+      "Consumer Goods & Electronics": {},
+      "Automotive": {},
+      "Food & Beverages": {},
+      "Pharmaceutical": {},
+      "Construction": {},
+      "Mining": {},
+      "Semiconductors": {},
+      "Aviation": {},
+      "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
+    }
+  },
+  "Rest of Asia Pacific": {
+    "By Equipment Type": {
+      "Transport Equipment": {
+        "Conveyors": {
+          "Belt Conveyors": {},
+          "Roller Conveyors": {},
+          "Chain Conveyors": {},
+          "Wheel Conveyors": {},
+          "Others (Vertical, Screw, Pneumatic, Bucket)": {}
+        },
+        "Industrial Trucks": {},
+        "Automated Guided Vehicles (AGVs / AMRs)": {},
+        "Cranes": {},
+        "Others (Hoppers, Reclaimers)": {}
+      },
+      "Handling Equipment": {},
+      "Racking & Storage Equipment": {},
+      "Others (Unit Load Formation, Identification & Control Equipment)": {}
+    },
+    "By Automation Level": {
+      "Manual Equipment": {},
+      "Semi Automatic & Automatic Equipment": {}
+    },
+    "By System Integration": {
+      "Standalone Systems": {},
+      "Integrated Systems": {}
+    },
+    "By End-Use Industry": {
+      "Consumer Goods & Electronics": {},
+      "Automotive": {},
+      "Food & Beverages": {},
+      "Pharmaceutical": {},
+      "Construction": {},
+      "Mining": {},
+      "Semiconductors": {},
+      "Aviation": {},
+      "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
+    }
+  },
+  "Brazil": {
+    "By Equipment Type": {
+      "Transport Equipment": {
+        "Conveyors": {
+          "Belt Conveyors": {},
+          "Roller Conveyors": {},
+          "Chain Conveyors": {},
+          "Wheel Conveyors": {},
+          "Others (Vertical, Screw, Pneumatic, Bucket)": {}
+        },
+        "Industrial Trucks": {},
+        "Automated Guided Vehicles (AGVs / AMRs)": {},
+        "Cranes": {},
+        "Others (Hoppers, Reclaimers)": {}
+      },
+      "Handling Equipment": {},
+      "Racking & Storage Equipment": {},
+      "Others (Unit Load Formation, Identification & Control Equipment)": {}
+    },
+    "By Automation Level": {
+      "Manual Equipment": {},
+      "Semi Automatic & Automatic Equipment": {}
+    },
+    "By System Integration": {
+      "Standalone Systems": {},
+      "Integrated Systems": {}
+    },
+    "By End-Use Industry": {
+      "Consumer Goods & Electronics": {},
+      "Automotive": {},
+      "Food & Beverages": {},
+      "Pharmaceutical": {},
+      "Construction": {},
+      "Mining": {},
+      "Semiconductors": {},
+      "Aviation": {},
+      "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
+    }
+  },
+  "Mexico": {
+    "By Equipment Type": {
+      "Transport Equipment": {
+        "Conveyors": {
+          "Belt Conveyors": {},
+          "Roller Conveyors": {},
+          "Chain Conveyors": {},
+          "Wheel Conveyors": {},
+          "Others (Vertical, Screw, Pneumatic, Bucket)": {}
+        },
+        "Industrial Trucks": {},
+        "Automated Guided Vehicles (AGVs / AMRs)": {},
+        "Cranes": {},
+        "Others (Hoppers, Reclaimers)": {}
+      },
+      "Handling Equipment": {},
+      "Racking & Storage Equipment": {},
+      "Others (Unit Load Formation, Identification & Control Equipment)": {}
+    },
+    "By Automation Level": {
+      "Manual Equipment": {},
+      "Semi Automatic & Automatic Equipment": {}
+    },
+    "By System Integration": {
+      "Standalone Systems": {},
+      "Integrated Systems": {}
+    },
+    "By End-Use Industry": {
+      "Consumer Goods & Electronics": {},
+      "Automotive": {},
+      "Food & Beverages": {},
+      "Pharmaceutical": {},
+      "Construction": {},
+      "Mining": {},
+      "Semiconductors": {},
+      "Aviation": {},
+      "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
+    }
+  },
+  "Argentina": {
+    "By Equipment Type": {
+      "Transport Equipment": {
+        "Conveyors": {
+          "Belt Conveyors": {},
+          "Roller Conveyors": {},
+          "Chain Conveyors": {},
+          "Wheel Conveyors": {},
+          "Others (Vertical, Screw, Pneumatic, Bucket)": {}
+        },
+        "Industrial Trucks": {},
+        "Automated Guided Vehicles (AGVs / AMRs)": {},
+        "Cranes": {},
+        "Others (Hoppers, Reclaimers)": {}
+      },
+      "Handling Equipment": {},
+      "Racking & Storage Equipment": {},
+      "Others (Unit Load Formation, Identification & Control Equipment)": {}
+    },
+    "By Automation Level": {
+      "Manual Equipment": {},
+      "Semi Automatic & Automatic Equipment": {}
+    },
+    "By System Integration": {
+      "Standalone Systems": {},
+      "Integrated Systems": {}
+    },
+    "By End-Use Industry": {
+      "Consumer Goods & Electronics": {},
+      "Automotive": {},
+      "Food & Beverages": {},
+      "Pharmaceutical": {},
+      "Construction": {},
+      "Mining": {},
+      "Semiconductors": {},
+      "Aviation": {},
+      "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
+    }
+  },
+  "Rest of Latin America": {
+    "By Equipment Type": {
+      "Transport Equipment": {
+        "Conveyors": {
+          "Belt Conveyors": {},
+          "Roller Conveyors": {},
+          "Chain Conveyors": {},
+          "Wheel Conveyors": {},
+          "Others (Vertical, Screw, Pneumatic, Bucket)": {}
+        },
+        "Industrial Trucks": {},
+        "Automated Guided Vehicles (AGVs / AMRs)": {},
+        "Cranes": {},
+        "Others (Hoppers, Reclaimers)": {}
+      },
+      "Handling Equipment": {},
+      "Racking & Storage Equipment": {},
+      "Others (Unit Load Formation, Identification & Control Equipment)": {}
+    },
+    "By Automation Level": {
+      "Manual Equipment": {},
+      "Semi Automatic & Automatic Equipment": {}
+    },
+    "By System Integration": {
+      "Standalone Systems": {},
+      "Integrated Systems": {}
+    },
+    "By End-Use Industry": {
+      "Consumer Goods & Electronics": {},
+      "Automotive": {},
+      "Food & Beverages": {},
+      "Pharmaceutical": {},
+      "Construction": {},
+      "Mining": {},
+      "Semiconductors": {},
+      "Aviation": {},
+      "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
+    }
+  },
+  "GCC": {
+    "By Equipment Type": {
+      "Transport Equipment": {
+        "Conveyors": {
+          "Belt Conveyors": {},
+          "Roller Conveyors": {},
+          "Chain Conveyors": {},
+          "Wheel Conveyors": {},
+          "Others (Vertical, Screw, Pneumatic, Bucket)": {}
+        },
+        "Industrial Trucks": {},
+        "Automated Guided Vehicles (AGVs / AMRs)": {},
+        "Cranes": {},
+        "Others (Hoppers, Reclaimers)": {}
+      },
+      "Handling Equipment": {},
+      "Racking & Storage Equipment": {},
+      "Others (Unit Load Formation, Identification & Control Equipment)": {}
+    },
+    "By Automation Level": {
+      "Manual Equipment": {},
+      "Semi Automatic & Automatic Equipment": {}
+    },
+    "By System Integration": {
+      "Standalone Systems": {},
+      "Integrated Systems": {}
+    },
+    "By End-Use Industry": {
+      "Consumer Goods & Electronics": {},
+      "Automotive": {},
+      "Food & Beverages": {},
+      "Pharmaceutical": {},
+      "Construction": {},
+      "Mining": {},
+      "Semiconductors": {},
+      "Aviation": {},
+      "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
+    }
+  },
+  "South Africa": {
+    "By Equipment Type": {
+      "Transport Equipment": {
+        "Conveyors": {
+          "Belt Conveyors": {},
+          "Roller Conveyors": {},
+          "Chain Conveyors": {},
+          "Wheel Conveyors": {},
+          "Others (Vertical, Screw, Pneumatic, Bucket)": {}
+        },
+        "Industrial Trucks": {},
+        "Automated Guided Vehicles (AGVs / AMRs)": {},
+        "Cranes": {},
+        "Others (Hoppers, Reclaimers)": {}
+      },
+      "Handling Equipment": {},
+      "Racking & Storage Equipment": {},
+      "Others (Unit Load Formation, Identification & Control Equipment)": {}
+    },
+    "By Automation Level": {
+      "Manual Equipment": {},
+      "Semi Automatic & Automatic Equipment": {}
+    },
+    "By System Integration": {
+      "Standalone Systems": {},
+      "Integrated Systems": {}
+    },
+    "By End-Use Industry": {
+      "Consumer Goods & Electronics": {},
+      "Automotive": {},
+      "Food & Beverages": {},
+      "Pharmaceutical": {},
+      "Construction": {},
+      "Mining": {},
+      "Semiconductors": {},
+      "Aviation": {},
+      "Others (Chemicals, Agriculture, Metals & Steel, Paper & Pulp, etc.)": {}
+    }
+  },
+  "Rest of Middle East & Africa": {
     "By Equipment Type": {
       "Transport Equipment": {
         "Conveyors": {
